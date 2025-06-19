@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white px-4">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex flex-col items-center justify-center text-white px-4">
       <div className="text-center space-y-6">
         <h1 className="text-5xl font-extrabold drop-shadow-lg">Smart Journal 📔</h1>
         <p className="text-xl font-medium text-white/90">
@@ -25,6 +25,18 @@ function Home() {
           </Link>
         </div>
       </div>
+
+      <footer className="mt-10 text-sm text-white/70 text-center">
+        Made with ❤️ by{" "}
+        <a
+          href="https://www.linkedin.com/in/ankit-6b2973330/"
+          className="underline hover:text-indigo-200"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ankit
+        </a>
+      </footer>
     </div>
   );
 }

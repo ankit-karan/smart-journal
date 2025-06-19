@@ -30,7 +30,7 @@ const Sidebar = () => {
   }, []);
 
   const handleNewChat = () => {
-    navigate("/chat"); // navigate to a fresh chat page
+    navigate("/chat");
   };
 
   const openChat = (chatId) => {
@@ -62,6 +62,18 @@ const Sidebar = () => {
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-6 text-center text-xs text-gray-400 border-t pt-3">
+        Created by{" "}
+        <a
+          href="https://www.linkedin.com/in/ankit-6b2973330/"
+          className="underline hover:text-white"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Ankit
+        </a>
       </div>
     </div>
   );

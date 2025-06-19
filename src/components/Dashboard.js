@@ -1,3 +1,4 @@
+// src/components/Dashboard.js
 import React from "react";
 import { auth } from "../firebase/firebase";
 import { useNavigate } from "react-router-dom";
@@ -69,6 +70,18 @@ const Dashboard = () => {
             🚪 Logout
           </button>
         </div>
+
+        <p className="text-center text-xs text-white/70 pt-6">
+          © {new Date().getFullYear()} Smart Journal | Made by{" "}
+          <a
+            href="https://www.linkedin.com/in/ankit-6b2973330/"
+            className="underline hover:text-yellow-200"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ankit
+          </a>
+        </p>
       </div>
     </div>
   );
